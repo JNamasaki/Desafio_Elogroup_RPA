@@ -1,0 +1,128 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_ST" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="numLote" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>466,952</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Login_ST_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Login_ST" sap:VirtualizedContainerService.HintSize="476,887" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: ST Logística - Rastreamento de Pacotes v1.00" sap:VirtualizedContainerService.HintSize="434,795" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="2a5e1140-b4c5-4e1d-b6b7-206d37d31557" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,506" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Número do lote'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="2a5e1140-b4c5-4e1d-b6b7-206d37d31557" Text="[numLote]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="131, 122, 193, 21" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd cls='Edit' idx='3' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;" Guid="0d3cc005-9e21-4808-a62c-4b2013e98e19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMUAAAAZCAYAAACBxOqkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVHhe7dPRCYBAEEPBLdtObeM6OD8UxahYwM5AIA28GmNMM7smCrPYGUUtq1nrvUYBXYkCwm8UVXU86EEUEEQBQRQQRAFBFBBEAUEUEEQBQRQQRAFBFBBEAeE3CuhGFBBEAUEUED6jMOu8RxRmtk8UZreNuQFrvyMD75LUnQAAAABJRU5ErkJggg==" InformativeScreenshot="0fa17f258a9fffea00806300d5579eee.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="27, 122, 79, 17" ElementType="Text" FriendlyName="'Número do lote'" FullSelectorArgument="&lt;wnd cls='Static' title='Número do lote:' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Número do lote:' check:text='Número do lote:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAVCAYAAAA6s9JxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGiSURBVFhH7VXRDcQgCHUq52Ebh3EXZ+kGHFhp1aJtcySXS/x4KdIH0qdQt20bLthgiWmIJaYhlpiGOMVMAb3zGFJFYJ8PmGRNSMGjg3hyfgGlriHecL9EJ6ZDV298KSRh8J3gv4ClmIZit2JS0gAeIbY+i41M8S9ipjq55rv4AYEOwNGt9iHmw3A0LiCmgwuebny+9bDf6iYOMHacKPvUqDieuuPooLvYvNeIy50ma51zdmFE4Folr4KrmGRHuZ3iqwuqufyUOdvbmd+NhT4uC75/kIivz+SOE6F8/IPYphaFe7yXfZR6JdcNVDHzKbAtvj6p5tdsfvIJN2ARB3HaesZ5E/skB9tavcftnGMg5n5yHuBdIb3NT601RnHaesZ5E/skB9s3rTzDUMx9RtDJZN8+L+SEuM3UQi52aa2wt5b6AU9aVePU+U3bXKlXct1gImZddLHLtQftxg5tHhmlZWSg93vR+uRU/hock/enHxDN9HqvaWxTi8aln2b2lRup1Vt4z39AC19jiWmIJaYhlpiGWGIaYolpiCWmIZaYZtjwAzVgAexsfeGjAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Carregar Lote'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2a5e1140-b4c5-4e1d-b6b7-206d37d31557" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="27, 146, 299, 25" ElementType="Button" FriendlyName="'Carregar Lote'" FullSelectorArgument="&lt;wnd cls='Button' title='Carregar Lote' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Carregar Lote' check:text='Carregar Lote' /&gt;" Guid="62d887f4-6c02-4ca7-9265-2b9b6f38fb84" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS8AAAAdCAYAAAD7G+rKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIOSURBVHhe7drRkYMgFIVhe6IbmqEVGkgRlJIO0gELRBTuQszObmZF/odvooBXXnIGSJbH4+EBYDSEF4AhEV4AhlSF1+12A4DTKvPqW3jd73cAOB3CC8CQCC8AQyK8AAyJ8AIwJMILwJAIr8k4o71aFr9ESnltXXPcv3PGK2W8a/UBAeE1EWdUCCzjrVvbnPV6Ud7k+zP5SXgRdFMivKbhvAkrrVMGVQvhhQOE1yyOvuC22E6G1Zi2oS09o73WYcWWtpn5WofVm/Fa5e2n3kOxan+u9NI7D+uHmuV8evMV77UplPP9Or43N1wK4TWLXhi05LHxM24r47lYeS1XcVvtZ5Bs52i9d7bq98ZU7XX9tA3WVoztzS3XwFUQXrM4+hKHfh1XSnl1lMMlPyOv87hNDCHxDvHMy/pSq0+25fuyPV5X84qKMMNlEF7TECuSynpwL1dMMhSqgBDbPDmmun+jvtTq69Uv2+N1a264HMJrIv1fG+PnfjYU/07xcuWVt29Gbg/FtjGec6X2N+pLzb53t42tuZV1cAWE12Sq/3mF4NqDYG9XcXsnw0WGQAy8EBKpjjiw3+rnOu/Ul8o62RpU+3vzszYF1nbo35sbLoXwwse4sPJKgdPoA36L8MKfsvlvFax68GGEF4AhEV4AhkR4ARgS4QVgSIfhBQBnVeZVFV4AMArCC8CQCC8AA3r4Lzg262JKFz8JAAAAAElFTkSuQmCC" InformativeScreenshot="7fa13dd9e5dc7dca00a654c203ad882e.png" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="19, 98, 313, 81" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd cls='Button' title='Alterar lote' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Alterar lote' check:text='unchecked' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAT0AAABVCAYAAAA7SzMeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYqSURBVHhe7Z1LjuIwEEBzJwSHySrHmB07uAb7qA/BBbKdTW/6Bn0Dj8txBcc4JDDNp6lX0hOOU7E9GvHkSlqk+v7+dgAAVkB6AGAKpAcApkB6AGCK26TXNq6q1m7XxeNu59brnevyvJ/mUfMAwNtyk/TaZu2apnHrXdf3qYzuLaW58ZEiAMxwg/Q6t1s3rv1uXaOCQXoA8Eu4Xnoilqb1bZFfLHGDbBovwcqXvZ5Ehqe+Zpzrd4tV5eXpS+W1nA/4HWRbyEnnnhi7DevR4wvz61gAYJJBep+fn5OkF3S7KKbYDiWuyiiVUipFOU5z5H5gG0vjlLmcYfxecE08L+uoRMTDecmfmF/H8pT+rQDwnuj3fiQ9bU+T7KYUlVT6KbnSTvMCIrJMPj6v8XIqjjfMe8o9m2eqX9qjuYVEggBghtulJyIJpa32xd2UiuxMOklpqqQ5cl8w3dHpuVFOwtT5Ur+0S/MDgDlult5QzuZ98iT3TEaxBL34hFekd7rX1u2aZTu9xeVtYX4dCwDMcLP0RvfIFJGJlqVeYn35G3dYnTzhjaXl6EHGST4iOi1D11LmyrkpQaX9vn324GTJ/DoWAJjhZukBAPxGkB4AmALpAYApkB4AmALpAYApkB4AmALpAYApkB4AmALpAYApkB4AmALpAYApkB4AmALpAYApkN4bUv35C2Ca0vdCQXpviPynE4TVuI/0ur3bVBu3T3+TTvo2+9Hv3nX7Tf+Dnknfwymsa5Jrcl8YpEdYjjtKr3JVKogzYXRuv8nE+Ax+Unq/RIqp9ORHUwnCUtxPev7Lv282w9vQXlYISC+2CMJG3FV6XSqBUt9Zv7y/1pe8/ou42bdBmpUvk/X9FpLbbOJPuvvcsEscXde4Nsspvuwnydn43eawI527Nsw1lSs7Vz0u55x2tf37PoprewBIj7Ac95Web7e629O+VBxprnzqfcC8HfKzcji/LoixF8/wEqDiPcMsp22ipBZcO1pLIXc4r/MU1qtjPRGkR1iOu0sv7GqkrX35l7/UX2rLp+yYRojsJq4rHV/KuebaJWNIu7TeYbf3PJAeYTkeIL1+J7RpmuuEkbfls1QSTl1XOr6Uc821S8aQ9hNL2EsgPcJyPER6/T0sv9MJff39LN3xSHlZFMZZO5aU+76kLIpmSYlayknH/9HytrBeHeuJID3CcjxIeqlcYjuWe01pBzjZllI5lor6YCCfyx+fcpL+FLkmzF/5HajfhSZzXbx2tJZSbhtEN3qXbr7emMeDDIJ4TtxHevDSID3CciA9gyA9wnIgPYMgPcJyID2DID3CciA9gyA9wnIgPYOk0iMIa4H0DIL0CMuB9AyC9AjLgfQMgvQIy4H0DCL/6QCWKX0vFKQHAKZAegBgCqQHAKZAegBgipul9/HxAQDwspS8JfyX9L6+vgAAXg6kBwCmQHoAYAqkBwCmQHoAYAqkBwCmQHqwiOO2dqsqvt1ttXL14VjMezrHrVuttu5YOgfgQXowy3G78qLbusMx9h0Prq5WbqvHr8Q10kOQJkF6MMPRbf3O7iUFVwLpwQxIDy4zJ4ZDUvb63V998H3hmtrVtd8hhnJY27XfLW5dvdIyuT7JdNTf7yzDnLPj+zHT9UytN5v3EGSuxzF/am3wViA9uMyUREpornxK+Sv3/dJ2vmscxu4FNNwnnJqzNP5Uzqh/PH4o1+tDlju1Nh0D3gWkB5eZ+/L787XszHQ3plLSa/K25g2IvLI5smsujp9TOpf36XHaL+3RuoREgvA2ID2YIdsBjYgPNPIdWi6TkViycjTPGR0vGD+ndG5q/LRf2qW1wduB9GCW6ae38nm69yV/1nJxp6dl5jYvY7PyVu7jhf4F4+cUzy0tb0trS8eBdwDpwSJGf6fnhXcSyKl/JWVoLqVcHiJKL5cwTvYgYxhfx1kyfk46jhIFd5pXrz0E0Q0PQ6bWBm8F0oOX4+h3ekFUhXMA/wvSg5fgoH/ewi4L7gzSAwBTID0AMAXSAwBTID0AMMXdpAcA8KqUvCXcLD0AgN8I0gMAUyA9ADAF0gMAUyA9ADAF0gMAUyA9ADDFpPQAAN6VM+kBAFgA6QGAKZAeABji2/0D4wHytRx51dgAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="631, 350, 768, 304" FilePath="C:\Users\jiron\OneDrive\Área de Trabalho\stlog.exe" IconBase64="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" InformativeScreenshot="0a02f21083a1764339152e2ad48ec194.png" IsExactTitleEnabled="True" Selector="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

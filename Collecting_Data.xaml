@@ -1,0 +1,140 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Collecting_Data" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="numLote" Type="OutArgument(x:String)" />
+    <x:Property Name="dadosRPA" Type="OutArgument(sd:DataTable)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1019,1044</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Collecting_Data_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="33">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Collecting_Data" sap:VirtualizedContainerService.HintSize="476,979" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: EloGroup - RPA Challenge - Controle de Pedidos" sap:VirtualizedContainerService.HintSize="434,887" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="663715f8-6438-40cb-8075-640a266fddfa" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,671" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strDadosRPA" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Número do lote'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="663715f8-6438-40cb-8075-640a266fddfa" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/starttest.php?token=6d16a4afa0ba988df832e3a473ac9835" DesignTimeRectangle="323, 407, 898, 24" ElementType="Text" FriendlyName="'131495'" FullSelectorArgument="&lt;webctrl id='lblnumLote' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='lblnumLote' tag='DIV' type='' /&gt;" Guid="cbba541d-3212-453c-a8fb-ce933d05b822" InformativeScreenshot="bec2cf4d8ab8c9cde1820eaf66364ec0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="144, 407, 180, 24" ElementType="Text" FriendlyName="'Número do lote'" FullSelectorArgument="&lt;webctrl aaname='Número do lote:' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Número do lote:' tag='DIV' type='' check:text='Número do lote:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAcCAYAAADSvnU/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKtSURBVHhe7ZY7jsIwFEVnwdNOSUdHR0tJwRZGomEJSIg1INiEx5n4c20/hyQkM+TpHukVceLvO7bzYQhRDAUnqqHgRDUUnKiGghPVUHCiGgpOVEPBiWreR/DLwXx+rWxszffdlSnhvG/mZWNzMjdXNor7yax/12hldhdXRjqZRnBY+M+vgzm7Ys/tuK2+a7maXef7ZUPB/48ZBLexv7oXLc8EbwXQd3J73kNwf4joXWeJeQTPEtAt+MPclC/4Wwiu+Bewi8kFX2+czJBMSXAp6cV3WUJDHRvr48N+8DDfm7wM8aeWjzS5OIaz7zvcPmnb/rvngmb1bHuy4CParwqez9MG3KK4bjHgsCkOKDyI4jiH3xr/z+SC7y5xQbxwUwgeNk6IrS3D57YsCFwkrfxGTHwjRrVuE5j8HEFaDD/Xse0n6+zKwskshOuvU/BqfeF99uu5BGYQHJ9bmaYQPCwuLrivC2U+8VL7vsxvPEw8nk6xHGSDsZQ3hQPGEb+B07UQbmD7+TrjhoJ5SusRy/AWg/pB3vzEzp+XxTyCW1CwcP2/IHhY3F5lT05Sl0xRNDHpDbXyiLSRG9K5jm+/nGfcPOmmEMpFwYVfG4jqRlsQswkuL95fCd6dON+nNIak7kAB5Q2T9zO+/WKe8DxKcKgvRm0cC2JGwS1wVbYhCB7KIMEvCw5tJfKmyIJXRIU+aidb3KDy2IqNNbD93vPs/YtS22xI7CO0tSDmFdwSk9lETCjKUMargluKzeUjjqEmOLZXBkhZ0O/mGN3+oHnawHkVfbb9VPMgjXWBJ/rsgqdJT5OXyG8Xb7pfFAcmJ0QcQ1XwXwRZeyU4rdecxnI/I9ofME/pFkhlhlxImySMlSc4IW8LBSeqoeBENRScqIaCE9VQcKIaCk5UQ8GJYoz5AXNXjPsIdioxAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[numLote]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dadosRPA]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Número do Pedido'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Nome do Cliente'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='CPF'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Rastreamento'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Situação'&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='text'&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="663715f8-6438-40cb-8075-640a266fddfa" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="113, 227, 1140, 4375" FriendlyName="'RPA Challenge'" FullSelectorArgument="&lt;webctrl tag='MAIN' /&gt;" Guid="9e3cfcf0-4dc8-4e0d-af62-651c5fab4b93" InformativeScreenshot="b694a8dbae57730ab40458da20ea2a85.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:RemoveDataRow Row="{x:Null}" DataTable="[dadosRPA]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="RemoveDataRow_1" RowIndex="0" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMSSURBVDhPZVNvTI1xFH7uvZVKLGXrpqSr8cFqFcsWk7YKm82fSnc1a6Fu61YrW+GKW1OIS5NoYm01WURCsUXC8MWfZdKM1SfLNH83fMjweOouHzjvnvd9t985zznnOb+DKVvk/hjT9esCHKeAO+eBVy1CNvBgFrBP5xuF5YJF8BbcliLMAXzkseU2MPAEGH9pMnHAw4MOHx8uDTZzpt/0H3L7IrwVnglHhVCs1dtfbPXAjkHg85inJ/tiY9mVn8/ylBQW5uWxYq+Laek2zp4dRLlP4btQMPlXAWQOAB++6uCNvz9v7d/PvdXVtGZlsbX1HK3WXczOrmJy8gYaDH8JJiqqQCIQ1gPcH1XmYYuF37y8+CI0lOmRkUxSBR0dHWxp6WJz8zWWlzsYFmahh4fnBME3IUcPcruBr70REbx67BivR0fzkzLckAbLAgNZUFgokgvs6enmgQMnmJPjZHx8Er2MhvEAYA8OAk2Pgd93N2/m65ER1qv0ewkJ/KhKLoooWiJaRF5ZWUmX6wzt9lrudNRwoY83k4GbOALceG4w8JHTydGxMdapijKbja1qZ0QEbcJCTWOT1crOzsu81XeXpXk2bjUZmQ88QS3Q/VQE3VK9obFRYmUzZO5cBihot4I1GTYLiyXuqjVraCsoYMXq1TylFrcBj1GoFi4Bv5xRUSwrK2NRURFjYmImlQ6UsI3z5/OZ2jktwo0a756qKp5ITeVhnetWXUMmkN4FfKydMYNBAQEak4EmsUeob3NwMEtzc3k2Lo79CmgPCWFzSQld4eHcoXuQBBQjEgg8Dly2ymEi6xRS09KYkZExqUmlKjupCntVSbuvL+uUYCvwcB4QgTp5bwASw4HhqeBZfn7MysxkfUMDB4eG2NffzyaHg21mMxt1XgK8WwFsku9fMxqBjAkS7QVLvb25fcECtkvQK3Y7z0i0Qwp2KXOxdkHjsytmmipwm9n9Ma0EVsqhsxp4XwP8bBKZ2qNTItu0J9rK3nhgnXy9gt0x/1uINFmirhKAk2qtcz3QpYz1UdqXUOCfOOAPd/Rqo6OCYEIAAAAASUVORK5CYII=" InformativeScreenshot="391c1a7cc1f2b9807c9e890ef4436d39.png" Selector="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos'/&gt;" Url="https://marcelstein.com/elochallenge/starttest.php?token=6d16a4afa0ba988df832e3a473ac9835" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

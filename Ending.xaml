@@ -1,0 +1,105 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Ending" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1019,662" sap2010:WorkflowViewState.IdRef="Ending_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Ending" sap:VirtualizedContainerService.HintSize="476,597" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: EloGroup - RPA Challenge - Controle de Pedidos" sap:VirtualizedContainerService.HintSize="434,505" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5a6a3321-b57b-48e3-9f55-d8e76f060fd5" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,249" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Atualizar pedidos'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a6a3321-b57b-48e3-9f55-d8e76f060fd5" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/starttest.php?token=6d16a4afa0ba988df832e3a473ac9835" DesignTimeRectangle="144, 649, 149, 38" ElementType="Button" FriendlyName="'Atualizar pedidos'" FullSelectorArgument="&lt;webctrl aaname='Atualizar pedidos' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Atualizar pedidos' tag='BUTTON' type='' check:text='Atualizar pedidos' /&gt;" Guid="9d905c8f-7fb9-431a-a8b1-8ed4f92fd477" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAAAqCAYAAACgAvlhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOXSURBVHhe7Zw9ktQwEIVJOBeH2pAqTrLXINwbQDoZIQnJhoRGT3Srntotj2dssTC8V/VqxpJG6p/P3o38bpGkyRJk0nR1kH35viwfnpfl/acy8VGW9xvMgB0wFNUgw6Tgko8aDEXQGmSgMPuRLN9qsMRqkOkpJp9lsMRqkGWLZfleswSZPMUsQSZPMUuQyVPMEmTyFLMEmTzFLEEmTzFLkMlTzBJk8hSz/n3IPi/La4n/pXzW66+/82nXD+CXnyXHb/318qNfE/1c5q+tmWnWeZBZs7kYf8SCLPVDQoakXpF88VMy/1SKNJo75AjZAzpCtscPCdml7IFG4/NSniZxXpDdb0EG40+UAVRhCsnVxztrY20GTS0YqYM4rrc/l882D+gz+foaA6lrpu9d9sQn5Pt2phi6XJMmx/NWN6Tt5UI8EbIMui7Pcm4KmdWmyfrAazZrfYNZp0DWJU0F5zXZk2wXZOXzwgW1QvF8t97mUxiK45P2wufbXm3erq8+gX1dEeddG0/7r2owOI/j86ZvQYZz+LqBHM8u4vh8b6/VKr4Sx98BmRWGg8/utFUCPsZNhpP9ojtQ4voyDmWQIa7VecHZDXO10KN1IRbEHfPiJ0769CmO9eTrrK5w3CveXNn46Px7zDoMWQbKEKhsLCYVoaEx1q2Q1bOScRiFZkXItoCvHq3jcfueymoAeDIQtiADGDzn7oCxs7Pcu99TjFdzvmLWYchig1hcsHshq8Wia7i7K8P6FLK4xuzgcZxdQwe/W3m0jsfte9Zo95tD5rYaQldzH5h1DLKsoWYUggEaQhbGfE9PLnvM3wpZbNLWeDcW9x55sC7ml+XCjjVz43ccJ8dYYaIzeA3vNTp7K6asPnvNOgRZd7dEx2YnzffmcJJIGvKGxUTrmUV7IRs1oc1R/P5kuxcyqOVnY1nsXAOcGWPnevhveJ+uJsk5nkeWG+cSa4Nrju3tIbPkRncBnN2BVZRYK4jp2fZtxbBrF87r7r643hpVi2XfM/l6hxpCrFkDuTGpfV05j2PNGuTQNBEI1SFm5BmbvWq+ne/CXD0n7B1rHedjbFn8e806/D+ZXLwXxv/ILEF2hgXZyixBdoYF2cosQXaGBdnKLEEmTzFLkMlTzBJk8hSzBJk8xSxBJk8xq0GmV0fJZ3n46ii9BE8+y8OX4Ol1nvIZBkPD13lCmASFgk2+1WAG7ETAoA4ySZohQSZN1rL8Ar8mkidgBQ4qAAAAAElFTkSuQmCC" InformativeScreenshot="07f9c7958d1cba466a3931b406f688e4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="144, 605, 1078, 28" FriendlyName="'Finalizar'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;main&amp;gt;div&amp;gt;h6' idx='3' tag='H6' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' aaname='Finalizar' tag='H6' check:text='Finalizar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABDoAAAAgCAYAAADzLxhXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPgSURBVHhe7d2/S5x3HAfw/isOQjKd020pWcRBEWoQKlkqGZQOhgzSDkEHsRDJcINDQOgg3HBwS0koIogchMQh4lAIBEkpGhowUDAQuCHw6fM895yeXoy29Qp5fL3gAz7fX8/X9c3z/d5XAQAAAFAQgg4AAACgMAQdAAAAQGEIOgAAAIDCEHQAAAAAhSHoAAAAAArjwkFHc6cSg/0Dcbu2n7dckhdL0dd/PSbr77LHnr0HAAAAKLzjoONtPSb7r2ehw8laiu2ku7nzKEZK5Zh+3AokLk1X0NGj9wAAAACF1x10jM/Gw0qlo9ZjLx/SE6eCDgAAAIB/qzvoeLCTN/xPBB0AAADAJbl40NEVSOzEYjr+Tj12X9Vjbryc9ZfGF2LtTT4k0XzTiJXZiSiX0mMwSf/QTCw/7wg1Tq976vmgPpU9d1Wpkh2pieZ+bK7Mxq0bA6328nBML2/Fwcds+vF6Pz+JlakbcS35e/FF3gcAAAAUyn8POm4Ox8j4/VjdaETtp4ksSOgbrx4ddzmoz8Tt+Wr88nQrnm1U44ehpL9/Ilb/yAecE3Q03+zEs3RuVo1Ynb2R9A/EXKOZ9af7nv5uIVYf5/0/Dmfzb1Xzy0zz9fr6h2Px+ftWGwAAAFBI519G2g4+zgo6Sgux+SFvindRu5POm421w7yp/WVFrtlYyNa5+2seOpwTdHRqJn2DSd9gsqc85uhaP3lBzKX7urce2RbaQcd843gOAAAAUEjnX0a6fvLLiK6g4049DvKW1PaDNOiYitrbvOHwdWxWKzH3/ViMjLaOjnw22Dgr6PiwFYs30/1VY7cz3Pj4PnY3qvFwfiZGvhk7OiJztK+z1gMAAAAK51Lu6Dgz6GjuxMP0qMrQTKykR0t+24/DjdYXHf8o6Pi4H7WpgegrJet23P+RvCC2K+lRleGYXnkSz56+jL2/8i86BB0AAABw5fQ26PhEyNC+XPTMYOMTc/Zq6ZyB4+MuRz6xh/b/IegAAACAK6e3QcfLR/F1Muba6FLUnm7FZvV+TI62Lgu9aNDRvpej79tKrB1dSprW6ziMl7GcHmcpjcViPWlLLzudGmuNF3QAAADAldPboCOasVudjcFy2laOW/Prsff888HGyec8yEjf01VL2c/LNl9V4+5Q50/bbp3cl6ADAAAArozjoAMAAADgCyfoAAAAAApD0AEAAAAUhqADAAAAKAxBBwAAAFAYgg4AAACgMAQdAAAAQGEIOgAAAIDCEHQAAAAAhSHoAAAAAApD0AEAAAAUxlHQ8fven0oppZRSSimllFJfZLX5ogMAAAAoDEEHAAAAUBARfwODa2r/twLXIQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMSSURBVDhPZVNvTI1xFH7uvZVKLGXrpqSr8cFqFcsWk7YKm82fSnc1a6Fu61YrW+GKW1OIS5NoYm01WURCsUXC8MWfZdKM1SfLNH83fMjweOouHzjvnvd9t985zznnOb+DKVvk/hjT9esCHKeAO+eBVy1CNvBgFrBP5xuF5YJF8BbcliLMAXzkseU2MPAEGH9pMnHAw4MOHx8uDTZzpt/0H3L7IrwVnglHhVCs1dtfbPXAjkHg85inJ/tiY9mVn8/ylBQW5uWxYq+Laek2zp4dRLlP4btQMPlXAWQOAB++6uCNvz9v7d/PvdXVtGZlsbX1HK3WXczOrmJy8gYaDH8JJiqqQCIQ1gPcH1XmYYuF37y8+CI0lOmRkUxSBR0dHWxp6WJz8zWWlzsYFmahh4fnBME3IUcPcruBr70REbx67BivR0fzkzLckAbLAgNZUFgokgvs6enmgQMnmJPjZHx8Er2MhvEAYA8OAk2Pgd93N2/m65ER1qv0ewkJ/KhKLoooWiJaRF5ZWUmX6wzt9lrudNRwoY83k4GbOALceG4w8JHTydGxMdapijKbja1qZ0QEbcJCTWOT1crOzsu81XeXpXk2bjUZmQ88QS3Q/VQE3VK9obFRYmUzZO5cBihot4I1GTYLiyXuqjVraCsoYMXq1TylFrcBj1GoFi4Bv5xRUSwrK2NRURFjYmImlQ6UsI3z5/OZ2jktwo0a756qKp5ITeVhnetWXUMmkN4FfKydMYNBAQEak4EmsUeob3NwMEtzc3k2Lo79CmgPCWFzSQld4eHcoXuQBBQjEgg8Dly2ymEi6xRS09KYkZExqUmlKjupCntVSbuvL+uUYCvwcB4QgTp5bwASw4HhqeBZfn7MysxkfUMDB4eG2NffzyaHg21mMxt1XgK8WwFsku9fMxqBjAkS7QVLvb25fcECtkvQK3Y7z0i0Qwp2KXOxdkHjsytmmipwm9n9Ma0EVsqhsxp4XwP8bBKZ2qNTItu0J9rK3nhgnXy9gt0x/1uINFmirhKAk2qtcz3QpYz1UdqXUOCfOOAPd/Rqo6OCYEIAAAAASUVORK5CYII=" InformativeScreenshot="56eb41e09d76e322bcbbbb14f234f212.png" Selector="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos'/&gt;" Url="https://marcelstein.com/elochallenge/starttest.php?token=6d16a4afa0ba988df832e3a473ac9835" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

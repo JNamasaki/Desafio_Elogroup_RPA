@@ -1,0 +1,118 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login_desafio" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1019,1019" sap2010:WorkflowViewState.IdRef="Login_desafio_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="56">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="23">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Login_desafio" sap:VirtualizedContainerService.HintSize="476,954" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="LoginToken" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[LoginToken]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">6d16a4afa0ba988df832e3a473ac9835</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: EloGroup - RPA Challenge" sap:VirtualizedContainerService.HintSize="434,762" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d8ffb310-e2f7-43ec-bdb3-6aec8d9d7126" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,506" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Token'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d8ffb310-e2f7-43ec-bdb3-6aec8d9d7126" Text="[LoginToken]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/" DesignTimeRectangle="144, 612, 1078, 38" ElementType="InputBox" FriendlyName="'INPUT token'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="a6e1c0ce-8723-4d14-9b8f-99f0d0457949" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABDoAAAAqCAYAAABStDsxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASDSURBVHhe7dwxj9NIGIDh+8G0lHTbbUe75Rb8BSQafsFpJQ6KQxQUCAFCogHRRD5/9tgZj8fZzRIWx/c80icRYk8SU80rm78aAAAAgI0QOgAAAIDNmISO7z9+Nu/ef2hu3rxt/v7nX2OMMcYYY4wxxphVTrSLaBjRMnJj6Ig34qAvX781u90u/S0AAADA+kS7iIYRLSOPHWPoiAoSBwAAAACci2gZ0TQGY+iIAuJODgAAAOCcRMuIpjEYQ0c83wIAAABwbvKmIXQAAAAAZ03oAAAAADZD6AAAAAA2Q+gAAAAANkPoAAAAADZD6AAAAAA2Q+gAAAAANkPoAAAAADbjD4WOz83zyyfNo+vX6fXd3Fy351y+bD6m1/9Ln142F4+fNs8/pdcAAADA6ISh43Vz9fhJ82g2tU250HFvQgcAAAAsOnnouHqVXg5ePeuDx5FR4066tZ81N+nlOfn44un9oo3QAQAAAIt+f+gI3eZ84b1fIXQAAAAAmYcJHa3usZPxro7+0ZWLF5/T61A8+tIeOz1nukb35/z4PHiksJKvdVB5fBEgpp81jQxdsCjXPxgj0mM7S5833AFTey/M1h6uWx58ims5WWN/7Se/6z7RBQAAAFbmwULH9A6GMnT05+bhozs+NuALoaNTu6NjFgJu+/9Ayu/dHn+93/TXP3O//vGho1e7o6P/zdPz+hhRRpzhmNpvm/87dGsU1z6u7f6Y+fUHAACAc/RgoaMLBAuho7bpD2VkuEvoiGNmG/ZaEBkcihLde+V5le9+ktCxdP2Kvx/XTsGiFksOfp9aHFn+NwAAAIBzsoo7OqpxonV86Eib+PZ7zGchdLS6deOYMhB06+dr7OfkoaMaVXqT65PWvqhEjjD+ltlMQ0d5vYUOAAAAtuDBQsdks/6bQ8fiXSUHZZFk+IxY/5bN/58JHe3ry/b8yvFL13JP6AAAAGC7HiZ0LASJPHTMN9kpPBwVOirHHCtf8z7BInRrHHvesY+upN9a/P7bg4XQAQAAwHb99tDRb8bLTX+x2R7uUsg2393Gu/27g6GjFiK6yFB8j/a4q2JjPyrfm8STFFuKAHBzncWF9N33n9dfh9tCRy3S9L95el73m/PPL37zLHak7zMNGe13Gq+b0AEAAMB2nTx07P9PiDTVuysqm+20QR/Oi/fKsDELHa1+ox+TbfZT7NjPNChMFJ87PzbFjuyYaiTIzy9iRF22bhYYpmu1U16/2dr7daZ3fWRrVI4XOgAAANiiE4aO06uFDQAAAIAlKw4d9UdhAAAAAJasI3TEoxaTOzfS4xgepQAAAACOsJI7Oir/v4fIAQAAABxpJaEDAAAA4NcJHQAAAMBmCB0AAADAZggdAAAAwGYIHQAAAMBmVEPHzZu3zW63S68AAAAA1i9aRjSNwRg63r3/0Hz5+i29AgAAAFi/aBnRNAZj6Pj+42dXQOIAd3YAAAAAaxbtIhpGtIxoGoMxdIR4IypIHBTPtxhjjDHGGGOMMcascaJdRMPII0eYhA4AAACAcyZ0AAAAABvRNP8BkkLzU4tBRkoAAAAASUVORK5CYII=" InformativeScreenshot="726f0735ff23052cb19aa9a8dbfae960.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="144, 585, 33, 19" ElementType="Text" FriendlyName="'Token'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='Token' check:text='Token' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAXCAYAAACMLIalAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEESURBVEhL7ZRBCoQwDAD3Kx724LPEgy/xoD8R+hTFZwj6iKxp0pq2omV1WQ8dEEzTmiENvuCBJKlYklQsSSqWS1KzqiBrRo7ug6T6FrJ3vvO0MOgN+/xWSjA0ORRq4eiYP0qNUMvuCQlHalJQrHl7lmO/4+YM1qFcBd3ESeZEaoGudCVlfpMi8brXyysYi2I4HqWCeX3VZ8ReHXPOcCwlPmbBDsgCjQrEN1kDSlK3gpzuqDu751LOxxGvAF6BJ27XnYc6dyRsuKFTPB+iEK7LzkmuS+kD7tXI/FaAZs8W01cSDjBygxRCYuYaZM4twPtMZ/1/H+/7SuoJJKlYklQsD5QC+ADMfmqF1UJCRwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Iniciar'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d8ffb310-e2f7-43ec-bdb3-6aec8d9d7126" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/" DesignTimeRectangle="144, 666, 68, 38" ElementType="Button" FriendlyName="'Iniciar'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Iniciar' check:text='Iniciar' /&gt;" Guid="1f46e99c-65b6-4fe5-8615-f7cbaaf896e8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAqCAYAAAAQ0R0WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGlSURBVGhD7ZoxUoRAEEVNPJeH2tAqT8I1DPcGmpIZmphsaDj2Rz40Qze7ulIq/Ff1A+iB2X47QzQ3RSwiQWeYCHp6LeWuKeX2wQr3+wp6Ru9w4BkEobBHMXXgwEsaBMFe9MAeAxdkEKTVMwYuyCAoGrjnEAlKQiQoCZGgJESCkhAJSkIkKAmRoCREgpKQXxF0fLcJ3+JancbGFRt/CGprhlwtqLVn2+e4lkWCNhAiQUnIjwvC9jm99FuDVFuEY3iNHOx6Qr8Fu/dU2xFzehpX43jOX89zacgqgoC/hzH+h9aC2IxvtO2l1IIg8vg4Xnd19wfwXdeuarKOINcQ0q0O18REkDV7srJv2qcWNIvNDSi3FvbdkNW2mB+zKAgNLjQUCZptR2MiaEnohSH/ThDmm4yPVtCmBH1li1UyonvbE2TpmjJ84+FHOpDZrShj04IQSiJ8Z91w/f1p/voK2mqIBCUhEpSESFASIkFJiAQlIRKUhEhQEiJBScggSMdfxoTHX3SAakx4gEpH8D4DB+ERPIAC7O1RFHpG714OmAgScyRokVI+AO/qyU2m507UAAAAAElFTkSuQmCC" InformativeScreenshot="24fe720682e0f96a554a356c8fef02f4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMSSURBVDhPZVNvTI1xFH7uvZVKLGXrpqSr8cFqFcsWk7YKm82fSnc1a6Fu61YrW+GKW1OIS5NoYm01WURCsUXC8MWfZdKM1SfLNH83fMjweOouHzjvnvd9t985zznnOb+DKVvk/hjT9esCHKeAO+eBVy1CNvBgFrBP5xuF5YJF8BbcliLMAXzkseU2MPAEGH9pMnHAw4MOHx8uDTZzpt/0H3L7IrwVnglHhVCs1dtfbPXAjkHg85inJ/tiY9mVn8/ylBQW5uWxYq+Laek2zp4dRLlP4btQMPlXAWQOAB++6uCNvz9v7d/PvdXVtGZlsbX1HK3WXczOrmJy8gYaDH8JJiqqQCIQ1gPcH1XmYYuF37y8+CI0lOmRkUxSBR0dHWxp6WJz8zWWlzsYFmahh4fnBME3IUcPcruBr70REbx67BivR0fzkzLckAbLAgNZUFgokgvs6enmgQMnmJPjZHx8Er2MhvEAYA8OAk2Pgd93N2/m65ER1qv0ewkJ/KhKLoooWiJaRF5ZWUmX6wzt9lrudNRwoY83k4GbOALceG4w8JHTydGxMdapijKbja1qZ0QEbcJCTWOT1crOzsu81XeXpXk2bjUZmQ88QS3Q/VQE3VK9obFRYmUzZO5cBihot4I1GTYLiyXuqjVraCsoYMXq1TylFrcBj1GoFi4Bv5xRUSwrK2NRURFjYmImlQ6UsI3z5/OZ2jktwo0a756qKp5ITeVhnetWXUMmkN4FfKydMYNBAQEak4EmsUeob3NwMEtzc3k2Lo79CmgPCWFzSQld4eHcoXuQBBQjEgg8Dly2ymEi6xRS09KYkZExqUmlKjupCntVSbuvL+uUYCvwcB4QgTp5bwASw4HhqeBZfn7MysxkfUMDB4eG2NffzyaHg21mMxt1XgK8WwFsku9fMxqBjAkS7QVLvb25fcECtkvQK3Y7z0i0Qwp2KXOxdkHjsytmmipwm9n9Ma0EVsqhsxp4XwP8bBKZ2qNTItu0J9rK3nhgnXy9gt0x/1uINFmirhKAk2qtcz3QpYz1UdqXUOCfOOAPd/Rqo6OCYEIAAAAASUVORK5CYII=" InformativeScreenshot="1803d2b1f8e0db8ae1cd0b32b3c2522e.png" Selector="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge'/&gt;" Url="https://marcelstein.com/elochallenge/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
